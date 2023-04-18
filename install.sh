@@ -104,7 +104,7 @@ install_soga() {
     fi
 
     rm soga/ -rf
-    wget https://github.com/themojie/supernode/releases/download/2.8.9-1/soga-linux-${arch}.tar.gz
+    wget https://github.com/themojie/supernode/releases/download/2.9.0-1/soga-linux-${arch}.tar.gz
     tar zxvf soga-linux-${arch}.tar.gz
     rm soga-linux-${arch}.tar.gz -rf
     mv soga /usr/local/
