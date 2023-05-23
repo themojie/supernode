@@ -2,7 +2,18 @@
 
 bash <(curl -Ls https://raw.githubusercontent.com/themojie/supernode/main/install.sh)
 
-wget https://raw.githubusercontent.com/themojie/supernode/main/install.sh
+#中间人的下载命令
+
+version= 手动设置版本号
+
+wget -O /etc/superman/install.sh https://raw.githubusercontent.com/themojie/supernode/main/installformsuperman.sh
+
+rm /etc/superman/soga-linux-amd64.tar.gz /etc/superman/soga-linux-arm64.tar.gz -rf
+
+wget -P /etc/superman https://github.com/themojie/supernode/releases/download/$version/soga-linux-amd64.tar.gz
+
+wget -P /etc/superman https://github.com/themojie/supernode/releases/download/$version/soga-linux-arm64.tar.gz
+
 
 # 新增的参数
 
